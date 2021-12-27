@@ -1,0 +1,114 @@
+name: first_desktop_application
+description: Hands on With Desktop application.
+
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+2
+
+environment:
+  sdk: ">=2.8.0 <3.0.0"
+  flutter: ">=1.10.2-pre.54"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # FFI
+  ffi: ^1.1.2
+
+  flare_flutter: ^3.0.1
+  get_it: ^7.1.3
+
+  # FONTS
+  font_awesome_flutter: ^9.1.0
+
+  # YOUR OWN PLUGIN, the name of my plugin is `init_dsktp_plugin`
+  init_dsktp_plugin:
+    git:
+      url: https://github.com/AseemWangoo/plugins.git
+      path: ./init_dsktp_plugin
+  # init_dsktp_plugin:
+  #   path: ../../../../Packages/plugins/init_dsktp_plugin
+
+  intl: ^0.17.0
+
+  provider: ^5.0.0
+
+  # Command Line Apps
+  args: ^2.1.1
+
+  # AUTO SIZE TEXT
+  auto_size_text: ^2.1.0
+
+  # URL LAUNCHER
+  url_launcher: ^6.0.9
+
+  # UNCOMMENT THIS FOR BUILDING MAC EXECUTABLE
+  # WINDOW SIZE
+  # window_size:
+  #   git:
+  #     url: git://github.com/google/flutter-desktop-embedding.git
+  #     path: plugins/window_size
+
+  # HTTP
+  http: ^0.13.3
+
+  # TYPED DATA
+  typed_data: ^1.2.0
+  collection: ^1.14.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # LINTER
+  lint: ^1.2.0
+
+  # UNCOMMENT THIS FOR BUILDING MAC EXECUTABLE
+# dependency_overrides:
+#   typed_data: ^1.2.0
+#   collection: ^1.14.13
+#   string_scanner: ^1.0.5
+#   source_span: ^1.7.0
+#   path: ^1.7.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/animations/
+    - assets/images/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto/Roboto-Thin.ttf
+          weight: 100
+        - asset: fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: fonts/Roboto/Roboto-Black.ttf
+          weight: 900
+    - family: Oswald
+      fonts:
+        - asset: fonts/Oswald-Regular.ttf
+    - family: Merriweather
+      fonts:
+        - asset: fonts/Merriweather-Bold.otf
+        - asset: fonts/Merriweather-Black.otf
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+        - asset: fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Poppins-Bold.ttf
+          weight: 700
+
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
